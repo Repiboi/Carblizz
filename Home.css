@@ -1,0 +1,243 @@
+*{
+  padding: O auto;
+  margin: o auto;
+}
+body{
+    padding: O;
+    margin: o; 
+    animation-duration: 40s;
+    animation-direction:reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-name: change;
+}
+@keyframes change{
+  10%{background-color:wheat;}
+  30%{background-color:rgb(197, 182, 142);} 
+  60%{background-color: rgb(175, 162, 137);}
+  90%{background-color:whitesmoke;}
+  100%{background-color: white;}
+}
+h5{
+    text-align: center;
+    margin-top: 10%;
+    color: gray;
+    font-size: 70px; 
+}
+.header{
+  display:block;
+  width: 65%;
+  height: 80px;
+  margin-left: 16.5%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  background-color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header a{
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  color: black;
+  padding: 14px 16px ;
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn{
+  font-size: 16px;
+  width: 20vw;
+  border: none;
+  background-color: yellow;
+  padding: 34px 60px;
+  margin-left: 20%;
+  outline: none;
+  margin: o;
+}
+.header a:hover, .dropdown:hover .dropbtn{
+  background:whitesmoke;
+  transition: all 1.5s ease-in-out;  
+  border-radius: 15px;
+}
+.dropctn{
+  display: none;
+  position:absolute;
+  /* width: 50% ; */
+  background-color:rgb(185, 185, 65);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px grey;
+  z-index: 1;
+  margin-left:7%;
+}
+.dropctn a{
+  float: none;
+  color: black;
+  padding: 12px 1px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropctn a:hover, .dropctn:hover.a{
+  background-color:yellow;
+  color: blue;
+}
+.dropdown:hover .dropctn{
+  display:block;
+}
+.content{
+  max-width: 800px;
+  text-align: left;
+  margin: auto;
+}
+.slider{
+  border-radius:10px;
+  width: 60vw;
+  height: 80vh;
+  background-color: #eeeeee;
+  margin:auto;
+  background-size:cover;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-direction:reverse;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.saerch{
+align-content: center;
+float:center;
+margin-left: 23%;
+margin-bottom: 10px;
+margin-bottom: 5%;
+}
+input{
+  height: 5vh;
+  width: 200vw;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  border-radius: 20px;
+  outline: none;
+}
+button{
+  background-color: yellow;
+  width: 10vw;
+  height: 5vh;
+  color:black;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+#search-results {
+  position: absolute;
+  z-index: 10;
+  margin: 1px auto;
+  background: white;
+  width: 90%;
+  text-align: left;
+  border-radius: 4px;
+  border: 2px solid yellow;
+  display: none;
+  }
+  .search-item {
+  color: white;
+  cursor: pointer;
+  }
+  .search-item p {
+  margin: 0;
+  padding: 10px;
+  }
+  .search-item:hover {
+  background: yellow;
+  }
+  #search-data {
+  margin-top: 10px;
+  color: yellow;
+  }
+  #search-data p {
+  margin: 0;
+  padding: 6px;
+  font-size: 16px;
+  }
+@keyframes slide {
+  0%{background-image: url(/images/2021-bmw-2-series-convertible-front-view-carbuzz-360063.jpg);}
+  20%{background-image: url(/images/2022-A-Class\ SEDAN-HERO-DR.jpg);}
+  40%{background-image: url(/images//2022-G-Class\ SUV-CT-2-6-1-DR.jpg);}   
+  60%{background-image: url(/images/M4\ CSL.jpg);}
+  80%{background-image: url(/images/mercmaybachla1-s600\ 2018.jpg);}
+  100%{background-image: url(/images/X1.jpg);}
+  }
+  
+ .body>p::first-letter{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkblue;
+ }
+
+ .body>p{
+  font-size: 15px ;
+  width: 90vw;
+  margin-left: 50px;
+}
+.containerGrid{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 25%;
+grid-gap: 1em;
+}
+.grid:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.grid h1{
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+}
+.grid p{
+  text-align: center;
+  color: gray;
+}
+.image{
+   margin: 10px;
+   margin-left: 15px;
+   transition:all .2s ease-in-out;
+   transition-duration: 1s;
+}
+
+.image:hover{
+  transform: scale(1.1);
+}
+.body2 p{
+  font-size: 15px ;
+  width: 90vw;
+  margin-left: 50px;
+}
+ .body2 p::first-line{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: larger;
+}
+footer{
+  text-align: center;
+  background-color: yellow;
+  font-size: larger;
+  font-style: oblique;
+  font-weight: bolder;
+  width: 100%;
+}
+@media screen  and (max-height: 780px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  header{display: none;}
+}
+a{
+  text-decoration: none;
+  color: black;
+}
